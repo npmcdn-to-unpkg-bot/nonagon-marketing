@@ -23,7 +23,7 @@ var loaders = [
     "loader": "style!css!sass"
   },
   {
-    "test": /\.(png|jpg)$/,
+    "test": /\.(png|jpg|svg)$/,
     "loader": "url?limit=8192"
   },
   {

@@ -8,6 +8,12 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -15,4 +21,12 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  font-family: "freight-big-pro", sans-serif;
+  font-style: normal;
+  font-weight: 900;
 }
