@@ -17,7 +17,19 @@ var loaders = [
   {
     "test": /\.css?$/,
     "loader": "style!css"
-  }
+  },
+  {
+    "test": /\.scss?$/,
+    "loader": "style!css!sass"
+  },
+  {
+    "test": /\.(png|jpg)$/,
+    "loader": "url?limit=8192"
+  },
+  {
+    "test": /\.html$/,
+    "loader": "html"
+  },
 ];
 
 module.exports = {
@@ -28,14 +40,14 @@ module.exports = {
     filename: '[name].js',
     publicPath: '/'
   },
+  module: {
+    loaders: loaders
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve('src', 'index.tpl.html'),
+      template: '!!html!' + path.resolve('src', 'index.tpl.html'),
       inject: 'body',
       filename: 'index.html'
     })
-  ],
-  module: {
-    loaders: loaders
-  }
+  ]
 };

@@ -1,0 +1,7 @@
+.Process {
+  display: flex;
+
+  @media (max-width: 800px) {
+    display: inherit;
+  }
+}

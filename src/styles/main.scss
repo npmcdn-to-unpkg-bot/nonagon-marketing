@@ -1,0 +1,18 @@
+@import "vars";
+@import "components/Banner";
+@import "components/Process";
+@import "components/Footer";
+@import "components/SignUp";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
